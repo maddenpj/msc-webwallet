@@ -10,6 +10,8 @@ function CreateWalletController($scope, $http, userService) {
       var password = create.password;
 
       //Generate new wallet here
+      var ecKey = new Bitcoin.ECKey();
+      var address = ecKey.getBitcoinAddress();
       //Sync to server, if OK store in User Service
     }
   }
